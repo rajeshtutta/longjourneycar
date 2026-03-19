@@ -40,7 +40,7 @@ stages {
         steps {
             sh '''
             docker rm -f $CONTAINER_NAME || true
-            docker run -d --name $CONTAINER_NAME -p 1234:80 $DOCKER_IMAGE:latest
+            docker run -d --name $CONTAINER_NAME -p 1999:80 $DOCKER_IMAGE:latest
             '''
         }
     }
